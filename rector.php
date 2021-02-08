@@ -19,6 +19,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters->set(Option::SKIP, [
         \Rector\DeadCode\Rector\ClassMethod\RemoveUnusedParameterRector::class,
         \Rector\DeadCode\Rector\ClassMethod\RemoveDelegatingParentCallRector::class,
+// uncomment the next line on a first run to prevent some weirdness
 //        \Rector\DeadCode\Rector\Assign\RemoveUnusedVariableAssignRector::class,
     ]);
 
